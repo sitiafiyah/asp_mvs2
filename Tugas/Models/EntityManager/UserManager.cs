@@ -46,10 +46,8 @@ namespace Tugas.Models.EntityManager
                     SUR.LOOKUPRoleID = user.LOOKUPRoleID;
                     SUR.SYSUserID = user.SYSUserID;
                     SUR.IsActive = true;
-                    SUR.RowCreatedSYSUserID = user.SYSUserID > 0 ? user.SYSUserID :
-1;
-                    SUR.RowModifiedSYSUserID = user.SYSUserID > 0 ? user.SYSUserID :
-1;
+                    SUR.RowCreatedSYSUserID = user.SYSUserID > 0 ? user.SYSUserID :1;
+                    SUR.RowModifiedSYSUserID = user.SYSUserID > 0 ? user.SYSUserID :1;
                     SUR.RowCreatedDateTime = DateTime.Now;
                     SUR.RowModifiedDateTime = DateTime.Now;
 
